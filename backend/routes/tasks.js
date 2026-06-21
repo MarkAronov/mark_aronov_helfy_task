@@ -59,7 +59,7 @@ router.patch('/:id/toggle', (req, res, next) => {
         return next(err);
     }
 
-    task.completed = true;
+    task.completed = !task.completed;
     res.status(202).send(task);
 });
 
