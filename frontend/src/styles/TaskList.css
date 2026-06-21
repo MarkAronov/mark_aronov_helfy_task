@@ -1,0 +1,42 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carousel-container>button {
+    flex-shrink: 0;
+    padding: 6px 12px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.carousel-container>button:hover {
+    background: white;
+}
+
+.carousel-outer {
+    overflow: hidden;
+    flex: 1;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    padding: 4px;
+    height: 200px;
+}
+
+.no-tasks {
+    color: darkgray;
+    font-size: 14px;
+    text-align: center;
+    padding: 40px 0;
+}

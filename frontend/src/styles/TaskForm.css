@@ -1,0 +1,55 @@
+.task-form {
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.task-form textarea {
+    resize: vertical;
+    min-height: 70px;
+}
+
+.task-form .field-error {
+    color: red;
+    font-size: 13px;
+}
+
+.task-form input.input-error,
+.task-form textarea.input-error,
+.task-form select.input-error {
+    border-color: red;
+}
+
+.task-form .form-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.task-form button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid grey;
+    background: white;
+}
+
+.task-form button[type='submit'] {
+    background: black;
+    color: white;
+    border-color: black;
+}
